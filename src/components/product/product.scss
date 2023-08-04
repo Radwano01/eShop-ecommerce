@@ -1,0 +1,57 @@
+.product {
+  display: flex;
+  position: relative;
+
+  .filter {
+    width: 20%;
+    // border: 2px solid var(--dark-blue);
+    transition: all 0.3s;
+  }
+
+  .product-content {
+    width: 80%;
+    padding-left: 5px;
+    position: relative;
+    .product-show-icon {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+
+      & > * {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .filter {
+      width: 50%;
+      background-color: #c0c0c0;
+      position: absolute;
+      height: 100%;
+      padding: 1rem;
+      z-index: 99;
+      left: 0; /* Hide the filter by default on mobile */
+    }
+
+    .filter.show {
+      left: -50%; /* Show the filter when the 'showFilter' is true */
+    }
+
+    .product-content {
+      width: 100%;
+      .product-show-icon {
+        display: flex; /* Hide the icon container on mobile */
+      }
+    }
+
+    /* Show the icon only when the 'showFilter' is true in responsive mode */
+     .product-show-icon {
+      display: flex;
+    }
+  }
+}

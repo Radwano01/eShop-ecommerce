@@ -1,0 +1,61 @@
+.product {
+    .review-card {
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+      .review-container{
+        margin-top: 50px;
+      }
+    .review {
+      border-top: 1px solid #ccc;
+    }
+    .details {
+      padding-top: 2rem;
+      display: flex;
+  
+      .details-img {
+        width: 45%;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        img {
+          width: 100%;
+        }
+      }
+  
+      .details-content {
+        width: 55%;
+        padding: 0 5px;
+        & > * {
+          margin-bottom: 1rem;
+        }
+        .price {
+          color: orangered;
+          font-weight: 500;
+        }
+  
+        .details-count {
+          display: flex;
+          align-items: center;
+          & > * {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .product {
+      .details {
+        flex-direction: column;
+  
+        .details-img {
+          width: 100%;
+        }
+  
+        .details-content {
+          width: 100%;
+        }
+      }
+    }
+  }
