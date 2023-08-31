@@ -67,15 +67,15 @@ const Contact = () => {
               <div className={"icons"}>
                 <span>
                   <FaPhoneAlt />
-                  <p>+905386166619</p>
+                  <p>+12 345 6789</p>
                 </span>
                 <span>
                   <FaEnvelope />
-                  <p>www.radwaniq@gmail.com</p>
+                  <p>example@business.com</p>
                 </span>
                 <span>
                   <GoLocation />
-                  <p>Turkey, Gaziantep</p>
+                  <p>USA Los Angles</p>
                 </span>
                 <span>
                   <FaTwitter />
